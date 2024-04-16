@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('');
+    background-size: 100% 170%; /* Ajusta el tamaño del fondo al 100% */
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+
+.container {
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+
+#rainbow-title {
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-family: Cooper-Black;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.link-box {
+    margin: 0 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.link-box:hover {
+    transform: scale(1.1);
+}
+
+.link-box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.link-box p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.links a {
+    text-decoration: none; 
+}
+#rainbow-love-letter {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+    transition: color 0.3s;
+}
+
+#rainbow-love-letter:hover {
+    color: #ff1493; /* Cambia el color del texto al rosa en hover */
+}
+
+
+

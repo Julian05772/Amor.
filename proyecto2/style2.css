@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 50px; /* Espacio entre el libro y los controles */
+    margin-top: 40px;
+}
+
+.page {
+    width: 300px;
+    height: 400px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgb(255, 0, 0);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #ff0000; /* Letras rojas */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transiciones */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Sombra negra */
+    margin: 0 10px; /* Espacio entre botones */
+}
+
+button:hover {
+    background-color: #000000; /* Fondo azul en hover */
+    color: white; /* Letras blancas en hover */
+}
+.night {
+    z-index: -1;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    filter: blur(0.1vmin);
+    background-image: radial-gradient(
+        ellipse at top,
+        transparent 0%,
+        var(--dark-color)
+      ),
+      radial-gradient(
+        ellipse at bottom,
+        var(--dark-color),
+        rgba(145, 233, 255, 0.2)
+      ),
+      repeating-linear-gradient(
+        220deg,
+        rgb(0, 0, 0) 0px,
+        rgb(0, 0, 0) 19px,
+        transparent 19px,
+        transparent 22px
+      ),
+      repeating-linear-gradient(
+        189deg,
+        rgb(0, 0, 0) 0px,
+        rgb(0, 0, 0) 19px,
+        transparent 19px,
+        transparent 22px
+      ),
+      repeating-linear-gradient(
+        148deg,
+        rgb(0, 0, 0) 0px,
+        rgb(0, 0, 0) 19px,
+        transparent 19px,
+        transparent 22px
+      ),
+      linear-gradient(90deg, rgb(0, 255, 250), rgb(240, 240, 240));
+  }
+
+  .page {
+    width: 400px; /* Aumenta el ancho de la página */
+    height: 500px; /* Aumenta el alto de la página */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgb(255, 0, 0);
+    display: flex;
+    flex-direction: column; /* Añadido para centrar verticalmente */
+    justify-content: center; /* Añadido para centrar verticalmente */
+    align-items: center;
+}
+
+.page h2 {
+    margin-top: 0; /* Quita el margen superior del título */
+}
+
+.page {
+  width: 400px; /* Aumenta el ancho de la página */
+  height: 500px; /* Aumenta el alto de la página */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgb(255, 0, 0);
+  display: flex;
+  flex-direction: column; /* Añadido para centrar verticalmente */
+  justify-content: center; /* Añadido para centrar verticalmente */
+  align-items: center;
+  padding: 20px; /* Añadido para separar el texto del borde */
+}
+
+.page h2 {
+  margin-top: 0; /* Quita el margen superior del título */
+  font-size: 24px; /* Aumenta el tamaño del título */
+  text-align: center; /* Centra el texto del título */
+  color: red;
+}
+
+.page p {
+  font-size: 18px; /* Aumenta el tamaño del texto */
+  text-align: justify; /* Justifica el texto */
+}
+
+.cover h1 {
+  color: red; /* Cambia el color del texto a rojo */
+}
+
+.page.images img {
+  max-width: 200px; /* Establece el ancho máximo de las imágenes */
+  max-height: 200px; /* Establece la altura máxima de las imágenes */
+  margin: 10px; /* Agrega un espacio entre las imágenes */
+}
+.small-image {
+  max-width: 200px; /* Cambia este valor según lo que se ajuste mejor al diseño */
+  max-height: 200px; /* Cambia este valor según lo que se ajuste mejor al diseño */
+  margin: 10px; /* Agrega margen entre las imágenes */
+}
+.page {
+  /* Resto del código CSS */
+
+  /* Ajuste para los títulos con fecha */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinea el contenido arriba */
+  align-items: center;
+}
+
+.page h2 {
+  /* Resto del código CSS */
+
+  /* Ajuste para los títulos con fecha */
+  margin-bottom: 10px; /* Espacio entre el título y el texto */
+}
+.page {
+  width: 400px; /* Aumenta el ancho de la página */
+  height: 500px; /* Aumenta el alto de la página */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgb(255, 0, 0);
+  display: flex;
+  flex-direction: column; /* Añadido para centrar verticalmente */
+  justify-content: center; /* Añadido para centrar verticalmente */
+  align-items: center;
+  padding: 20px; /* Añadido para separar el texto del borde */
+  font-size: 20px; /* Aumenta el tamaño del texto */
+}
+
+.page h2 {
+  margin-top: 0; /* Quita el margen superior del título */
+  font-size: 28px; /* Aumenta el tamaño del título */
+  text-align: center; /* Centra el texto del título */
+  color: red;
+}
+
+.page.por-que-tu,
+.page.atractivos-emocionales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.page.por-que-tu h2,
+.page.atractivos-emocionales h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.page.por-que-tu p,
+.page.atractivos-emocionales p {
+  font-size: 22px;
+}
+.cover .drawing {
+  max-width: 200px; /* Define el ancho máximo de la imagen */
+  max-height: 200px; /* Define la altura máxima de la imagen */
+}
+
+.pack1 {
+  max-width: 250px; /* Define el ancho máximo de la imagen */
+  max-height: 250px; /* Define la altura máxima de la imagen */
+  margin-top: 20px; /* Espacio entre el texto y la imagen */
+  /* Coloca la URL de la imagen correspondiente en el atributo src */
+  /* Ejemplo: src="imagen1.jpg" */
+}
+
+.pack2 {
+  max-width: 300px; /* Define el ancho máximo de la imagen */
+  max-height: 300px; /* Define la altura máxima de la imagen */
+  margin-top: 20px; /* Espacio entre el texto y la imagen */
+  /* Coloca la URL de la imagen correspondiente en el atributo src */
+  /* Ejemplo: src="imagen2.jpg" */
+}
+
+.pack3 {
+  max-width: 300px; /* Define el ancho máximo de la imagen */
+  max-height: 300px; /* Define la altura máxima de la imagen */
+  margin-top: 20px; /* Espacio entre el texto y la imagen */
+  /* Coloca la URL de la imagen correspondiente en el atributo src */
+  /* Ejemplo: src="imagen3.jpg" */
+}
+
+.pack4 {
+  max-width: 300px; /* Define el ancho máximo de la imagen */
+  max-height: 250px; /* Define la altura máxima de la imagen */
+  margin-top: 20px; /* Espacio entre el texto y la imagen */
+  /* Coloca la URL de la imagen correspondiente en el atributo src */
+  /* Ejemplo: src="imagen4.jpg" */
+}
